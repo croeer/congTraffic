@@ -65,8 +65,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             print(lastUpdated.text)
 
             if verbrauch.count == 0 {
-                usageLabel.text = "-- MB von -- GB"
-                lastUpdateLabel.text = "Keine Live-Daten verfügbar."
+                usageLabel.text = "-- MB von -- GB verbraucht"
+                lastUpdateLabel.text = "Keine Live-Daten verfügbar. Ist WLAN noch aktiv?"
                 
             } else {
                 usageLabel.text = kontingent.text
@@ -88,12 +88,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     func getStats(completion: (xmlString: String?, error: NSError?) -> ()) {
-        /* // todo: caching
-        if let cachedStats: CongDto = getCachedStats() {
-            completion(stats: cachedStats, error: nil)
-            return
-        }
-        */
         
         let userAgent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5"
         
@@ -107,7 +101,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             if error == nil {
                 if let _ = response as? NSHTTPURLResponse {
                     let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                    //urlResponse = dataString as! String
                     print(dataString)
                     completion(xmlString: dataString as? String, error: nil)
                 }

@@ -15,7 +15,6 @@ target 'congTrafficUITests' do
 end
 
 target 'congWidget' do
-pod 'XMLParser', '~> 1.0'
 pod 'Kanna', '~> 1.0.0'
 use_frameworks!
 end
