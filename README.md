@@ -1,4 +1,4 @@
 # congTraffic
 iOS today widget to display remaining congstar data volume
 
-![screenshot](https://github.com/croeer/congTraffic/blob/master/screenshot.png)
+<img src="https://github.com/croeer/congTraffic/blob/master/screenshot.png" width="300">
