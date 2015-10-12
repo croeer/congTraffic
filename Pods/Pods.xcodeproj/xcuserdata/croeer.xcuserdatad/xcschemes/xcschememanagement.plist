@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-congTraffic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-congWidget.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2FF2845BFE86B54952B72D404CE058F5</key>
+		<key>6B45FF906370745138C733A6F65528C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B45FF906370745138C733A6F65528C2</key>
+		<key>B1A19B414FA97CC47F11353FB538422A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAA354DE94722CF51F3529A28C77BD99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F23782FC028468419E138BCD26A8EE16</key>
 		<dict>
 			<key>primary</key>
 			<true/>
