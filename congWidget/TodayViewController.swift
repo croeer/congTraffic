@@ -8,7 +8,6 @@
 
 import UIKit
 import NotificationCenter
-import XMLParser
 import Kanna
 import Foundation
 import MobileDataKit

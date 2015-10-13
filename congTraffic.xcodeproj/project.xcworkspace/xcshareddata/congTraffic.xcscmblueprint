@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B1705997B7B1FD18AB4294E6C33AECB58CED182F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF1BF5D3EE1B0E23C162A015A01DCF014A973F82" : 0,
+    "B1705997B7B1FD18AB4294E6C33AECB58CED182F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1AF203FD-E834-4ABA-B1AC-6440C25F0969",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF1BF5D3EE1B0E23C162A015A01DCF014A973F82" : "congTraffic\/GlimpseXML\/",
+    "B1705997B7B1FD18AB4294E6C33AECB58CED182F" : "congTraffic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "congTraffic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "congTraffic.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/glimpseio\/GlimpseXML.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF1BF5D3EE1B0E23C162A015A01DCF014A973F82"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/croeer\/congTraffic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B1705997B7B1FD18AB4294E6C33AECB58CED182F"
+    }
+  ]
+}
