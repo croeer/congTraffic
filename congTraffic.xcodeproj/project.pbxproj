@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		786740D91BD17FED00DA6655 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B3FC1E1BCDB2960099E604 /* Kanna.framework */; };
 		786740DB1BD180F400DA6655 /* XmlTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786740DA1BD180F400DA6655 /* XmlTools.swift */; settings = {ASSET_TAGS = (); }; };
+		786740DD1BD2CF5400DA6655 /* UsedDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786740DC1BD2CF5400DA6655 /* UsedDataView.swift */; settings = {ASSET_TAGS = (); }; };
+		786740DE1BD2D40D00DA6655 /* Kanna.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78B3FC1E1BCDB2960099E604 /* Kanna.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78B3FC1F1BCDB2960099E604 /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B3FC1E1BCDB2960099E604 /* Kanna.framework */; };
 		78E20A1F1BCD03A30026B6B1 /* MobileDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E20A1E1BCD03A30026B6B1 /* MobileDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78E20A261BCD03A30026B6B1 /* MobileDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E20A1C1BCD03A30026B6B1 /* MobileDataKit.framework */; settings = {ASSET_TAGS = (); }; };
@@ -83,6 +85,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				786740DE1BD2D40D00DA6655 /* Kanna.framework in Embed Frameworks */,
 				78E20A321BCD03A30026B6B1 /* MobileDataKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -103,6 +106,7 @@
 
 /* Begin PBXFileReference section */
 		786740DA1BD180F400DA6655 /* XmlTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlTools.swift; sourceTree = "<group>"; };
+		786740DC1BD2CF5400DA6655 /* UsedDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsedDataView.swift; sourceTree = "<group>"; };
 		78B3FC1E1BCDB2960099E604 /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
 		78E20A1C1BCD03A30026B6B1 /* MobileDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E20A1E1BCD03A30026B6B1 /* MobileDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileDataKit.h; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				78F82AF41BC2F14400454A7E /* Assets.xcassets */,
 				78F82AF61BC2F14400454A7E /* LaunchScreen.storyboard */,
 				78F82AF91BC2F14400454A7E /* Info.plist */,
+				786740DC1BD2CF5400DA6655 /* UsedDataView.swift */,
 			);
 			path = congTraffic;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F82AF01BC2F14400454A7E /* ViewController.swift in Sources */,
+				786740DD1BD2CF5400DA6655 /* UsedDataView.swift in Sources */,
 				78F82AEE1BC2F14400454A7E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

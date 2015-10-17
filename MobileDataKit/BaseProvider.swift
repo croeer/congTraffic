@@ -20,7 +20,7 @@ public class BaseProvider : ProviderProtocol {
     public func fetchTrafficData(completion: (error: NSError?) -> ()) {
         self.getStats { xmlString, error in
             dispatch_async(dispatch_get_main_queue()) {
-                self.XmlString = xmlString!
+                self.XmlString = xmlString
                 completion(error: error)
             }
         }
