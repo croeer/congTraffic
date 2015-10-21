@@ -12,6 +12,8 @@ import MobileDataKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var dataView: UsedDataView!
+    @IBOutlet weak var volumeLabel: UILabel!
+    @IBOutlet weak var lastUpdatedLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +23,19 @@ class ViewController: UIViewController {
         provider.fetchTrafficData { error in
             if error == nil {
                 
-                let (usedData, fullVolume, _) = parseXmlString(provider.XmlString!)
+                let (usedData, fullVolume, lastUpdateString) = parseXmlString(provider.XmlString!)
                 
                 if let usedData = usedData, fullVolume = fullVolume {
                     self.dataView.totalVolume = fullVolume
                     self.dataView.usedVolume = usedData
+                    
+                    self.lastUpdatedLabel.text = lastUpdateString
+                    self.volumeLabel.text = String(format:"%.2f", usedData)
                 }
                 
-                //lastUpdateLabel.text = lastUpdateString
-            }
+                self.dataView.setNeedsDisplay()
+
+               }
         }
 
         

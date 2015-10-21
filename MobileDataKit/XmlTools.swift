@@ -30,8 +30,8 @@ public func parseXmlString(xmlString: String) -> (usedData: Double?, fullVolume:
             lastUpdateText = "Keine Live-Daten verfügbar. Ist WLAN noch aktiv?"
         } else {
             let parseStrArr = kontingent.text!.characters.split{$0 == " "}.map(String.init)
-            usedData = (parseStrArr[0] as NSString).doubleValue
-            fullVolume = (parseStrArr[2] as NSString).doubleValue
+            usedData = (parseStrArr[0].stringByReplacingOccurrencesOfString(",", withString: ".") as NSString).doubleValue
+            fullVolume = (parseStrArr[2] as NSString).doubleValue * 1024.0
 
             lastUpdateText = lastUpdated.text!
         }

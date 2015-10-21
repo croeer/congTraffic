@@ -18,11 +18,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehe-fT-GXG" customClass="UsedDataView" customModule="congTraffic" customModuleProvider="target">
                                 <rect key="frame" x="185" y="70" width="230" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="247,51 MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXO-vd-kvY">
+                                        <rect key="frame" x="76" y="104" width="79" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="89N-BR-xZE"/>
                                     <constraint firstAttribute="height" constant="230" id="9Zw-Pz-XR9"/>
+                                    <constraint firstItem="mXO-vd-kvY" firstAttribute="centerY" secondItem="ehe-fT-GXG" secondAttribute="centerY" id="FOI-sJ-Qgx"/>
+                                    <constraint firstItem="mXO-vd-kvY" firstAttribute="centerX" secondItem="ehe-fT-GXG" secondAttribute="centerX" id="S3t-HL-46k"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="totalVolume">
@@ -33,19 +44,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Letzte Aktualisierung: 21.10.2015 um 20:22 Uhr (MEZ/MESZ)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAz-nE-vuF">
+                                <rect key="frame" x="113" y="324" width="373" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GAz-nE-vuF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X7a-HB-77m"/>
+                            <constraint firstItem="GAz-nE-vuF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XsF-A7-BgA"/>
                             <constraint firstItem="ehe-fT-GXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aLv-wG-Ffd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dataView" destination="ehe-fT-GXG" id="4Rg-p3-W4U"/>
+                        <outlet property="lastUpdatedLabel" destination="GAz-nE-vuF" id="PXw-Ta-jvo"/>
+                        <outlet property="volumeLabel" destination="mXO-vd-kvY" id="NEH-ab-cPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="258"/>
         </scene>
     </scenes>
 </document>
