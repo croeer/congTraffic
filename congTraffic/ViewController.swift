@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var volumeLabel: UILabel!
     @IBOutlet weak var lastUpdatedLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(animated: Bool) {
         let provider = BaseProvider(statsUrl: GlobalConstants.TELEKOM_STATS_URL)
         
         provider.fetchTrafficData { error in
@@ -34,13 +32,11 @@ class ViewController: UIViewController {
                 }
                 
                 self.dataView.setNeedsDisplay()
-
-               }
+                
+            }
         }
-
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

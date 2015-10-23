@@ -54,7 +54,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         let (usedData, fullVolume, lastUpdateString) = parseXmlString(xmlString)
         
         if let usedDataStr = usedData, fullVolumeStr = fullVolume {
-            usageLabel.text = "\(usedDataStr) von \(fullVolumeStr) GB verbraucht"
+            usageLabel.text = "\(usedDataStr) MB von \(fullVolumeStr) GB verbraucht"
         }
         
         lastUpdateLabel.text = lastUpdateString

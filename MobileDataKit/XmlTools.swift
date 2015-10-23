@@ -31,7 +31,7 @@ public func parseXmlString(xmlString: String) -> (usedData: Double?, fullVolume:
         } else {
             let parseStrArr = kontingent.text!.characters.split{$0 == " "}.map(String.init)
             usedData = (parseStrArr[0].stringByReplacingOccurrencesOfString(",", withString: ".") as NSString).doubleValue
-            fullVolume = (parseStrArr[2] as NSString).doubleValue * 1024.0
+            fullVolume = (parseStrArr[2] as NSString).doubleValue
 
             lastUpdateText = lastUpdated.text!
         }
